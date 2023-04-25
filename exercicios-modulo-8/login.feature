@@ -10,10 +10,10 @@
 
             Esquema do Cenário: Autenticação de multiplos usuários
             Quando eu digitar <user> e <password>
-            Então deve executar a seguinte <action>
+            Então deve executar a seguinte <mensagem>
 
             Exemplos:
-            | usuario                  | senha  | acao                                             |
-            | "ana@shop.ebac.com.br"   | "123@" | redirecionar o usuário para o checkout           |
+            | usuario                  | senha  | mensagem                                         |
+            | "ana@shop.ebac.com.br"   | "123@" | "Seja bem-vinda Ana!"                             |
             | "maria#shop.ebac.com.br" | "321@" | mensagem de alerta: "Usuário ou senha inválidos" |
             | "clara@shop.ebac.com.br" | "..."  | mensagem de alerta: "Usuário ou senha inválidos" |

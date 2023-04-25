@@ -16,14 +16,14 @@
 
             Esquema do Cenário: Configuração de cor, tamanho e quantidade do produto
             Quando seleciono a <cor>, a <quantidade> e o <tamanho> do produto
-            Então deve executar a seguinte <acao>
+            Então deve executar a seguinte <mensagem>
 
             Exemplos:
-            | cor    | quantidade | tamanho | acao                                                 |
-            | "blue" | "5"        | "S"     | o produto deve ser adicionado ao carrinho            |
-            | "red"  | "10"       | " "     | mensagem:"Favor selecionar o tamanho do produto"     |
-            | " "    | "2"        | "XS"    | mensagem:"Favor selecionar a cor do produto"         |
-            | "blue" | "12"       | "XL"    | mensagem:"É premitido apenas 10 produtos por venda." |
+            | cor    | quantidade | tamanho | mensagem                                                        |
+            | "blue" | "5"        | "S"     | "Produto adicionado a carrinho."                                |
+            | "red"  | "10"       | " "     | mensagem de alerta: "Favor selecionar o tamanho do produto."    |
+            | " "    | "2"        | "XS"    | mensagem de alerta: "Favor selecionar a cor do produto."        |
+            | "blue" | "12"       | "XL"    | mensagem de alerta: "É premitido apenas 10 produtos por venda." |
 
 
 
